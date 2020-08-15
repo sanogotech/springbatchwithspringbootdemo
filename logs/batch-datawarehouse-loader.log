@@ -1,0 +1,39 @@
+2020-02-12 21:56:49.967  INFO 7060 --- [main] BatchDatawarehouseLoaderApplicationTests : Starting BatchDatawarehouseLoaderApplicationTests on Dell-PC with PID 7060 (started by Dell in E:\Dev-since04022019\Sources\datawarehouse-loader-batch)
+2020-02-12 21:56:49.986  INFO 7060 --- [main] BatchDatawarehouseLoaderApplicationTests : The following profiles are active: test
+2020-02-12 21:56:51.387  INFO 7060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-02-12 21:56:51.567  INFO 7060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 164ms. Found 5 JDBC repository interfaces.
+2020-02-12 21:56:52.809  INFO 7060 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-12 21:56:53.056  INFO 7060 --- [main] com.zaxxer.hikari.HikariDataSource       : datawarehouse-db-test - Starting...
+2020-02-12 21:56:53.607  INFO 7060 --- [main] com.zaxxer.hikari.HikariDataSource       : datawarehouse-db-test - Start completed.
+2020-02-12 21:56:53.851  INFO 7060 --- [main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: H2
+2020-02-12 21:56:53.893  INFO 7060 --- [main] com.gkemayo.batch.reader.BatchReader     : Batch reader starting to read input data in repository : ./src/test/resources/reports-repository
+2020-02-12 21:56:53.894  INFO 7060 --- [main] com.gkemayo.batch.reader.BatchReader     : Reading file : E:\Dev-since04022019\Sources\datawarehouse-loader-batch\.\src\test\resources\reports-repository\fichier1.csv
+2020-02-12 21:56:53.895  INFO 7060 --- [main] com.gkemayo.batch.reader.BatchReader     : Reading file : E:\Dev-since04022019\Sources\datawarehouse-loader-batch\.\src\test\resources\reports-repository\fichier2.csv
+2020-02-12 21:56:53.895  INFO 7060 --- [main] com.gkemayo.batch.reader.BatchReader     : Reading file : E:\Dev-since04022019\Sources\datawarehouse-loader-batch\.\src\test\resources\reports-repository\fichier3.csv
+2020-02-12 21:56:55.480  INFO 7060 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-12 21:56:55.870  INFO 7060 --- [main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: H2
+2020-02-12 21:56:55.873  INFO 7060 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2020-02-12 21:56:55.991  INFO 7060 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:datawarehouse-db-test'
+2020-02-12 21:56:56.040  INFO 7060 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-02-12 21:56:56.115  INFO 7060 --- [main] BatchDatawarehouseLoaderApplicationTests : Started BatchDatawarehouseLoaderApplicationTests in 7.724 seconds (JVM running for 11.711)
+2020-02-12 21:56:56.117  INFO 7060 --- [main] o.s.b.a.b.JobLauncherCommandLineRunner   : Running default command line with: []
+2020-02-12 21:56:56.425  INFO 7060 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=jobDatawarehouseLoader]] launched with the following parameters: [{run.id=1}]
+2020-02-12 21:56:56.474  INFO 7060 --- [main] c.g.batch.batchutils.BatchJobListener    : Begining of job  jobDatawarehouseLoader at Wed Feb 12 21:56:56 CET 2020
+2020-02-12 21:56:56.493  INFO 7060 --- [main] o.s.batch.core.job.SimpleStepHandler     : Executing step: [stepDatawarehouseLoader]
+2020-02-12 21:56:56.673  INFO 7060 --- [main] c.g.batch.batchutils.BatchStepSkipper    : 3: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -- Parsing error at line: 3 in resource=[file [E:\Dev-since04022019\Sources\datawarehouse-loader-batch\.\src\test\resources\reports-repository\fichier1.csv]], input=[XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX]
+2020-02-12 21:56:56.674  INFO 7060 --- [main] c.g.batch.batchutils.BatchStepSkipper    : 4: YYYYYYYYYYYYYYYYYYYYYY -- Parsing error at line: 4 in resource=[file [E:\Dev-since04022019\Sources\datawarehouse-loader-batch\.\src\test\resources\reports-repository\fichier1.csv]], input=[YYYYYYYYYYYYYYYYYYYYYY]
+2020-02-12 21:56:56.726  INFO 7060 --- [main] o.s.batch.core.step.AbstractStep         : Step: [stepDatawarehouseLoader] executed in 232ms
+2020-02-12 21:56:56.731  INFO 7060 --- [main] c.g.batch.batchutils.BatchJobListener    : End of job  jobDatawarehouseLoader at Wed Feb 12 21:56:56 CET 2020 with status COMPLETED
+2020-02-12 21:56:56.733  INFO 7060 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=jobDatawarehouseLoader]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 263ms
+2020-02-12 21:56:57.170  INFO 7060 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=jobDatawarehouseLoader]] launched with the following parameters: [{random=37809}]
+2020-02-12 21:56:57.176  INFO 7060 --- [main] c.g.batch.batchutils.BatchJobListener    : Begining of job  jobDatawarehouseLoader at Wed Feb 12 21:56:57 CET 2020
+2020-02-12 21:56:57.203  INFO 7060 --- [main] o.s.batch.core.job.SimpleStepHandler     : Executing step: [stepDatawarehouseLoader]
+2020-02-12 21:56:57.240  INFO 7060 --- [main] c.g.batch.batchutils.BatchStepSkipper    : 3: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -- Parsing error at line: 3 in resource=[file [E:\Dev-since04022019\Sources\datawarehouse-loader-batch\.\src\test\resources\reports-repository\fichier1.csv]], input=[XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX]
+2020-02-12 21:56:57.241  INFO 7060 --- [main] c.g.batch.batchutils.BatchStepSkipper    : 4: YYYYYYYYYYYYYYYYYYYYYY -- Parsing error at line: 4 in resource=[file [E:\Dev-since04022019\Sources\datawarehouse-loader-batch\.\src\test\resources\reports-repository\fichier1.csv]], input=[YYYYYYYYYYYYYYYYYYYYYY]
+2020-02-12 21:56:57.292  INFO 7060 --- [main] o.s.batch.core.step.AbstractStep         : Step: [stepDatawarehouseLoader] executed in 87ms
+2020-02-12 21:56:57.294  INFO 7060 --- [main] c.g.batch.batchutils.BatchJobListener    : End of job  jobDatawarehouseLoader at Wed Feb 12 21:56:57 CET 2020 with status COMPLETED
+2020-02-12 21:56:57.295  INFO 7060 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=jobDatawarehouseLoader]] completed with the following parameters: [{random=37809}] and the following status: [COMPLETED] in 124ms
+2020-02-12 21:56:57.413  INFO 7060 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-02-12 21:56:57.415  INFO 7060 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-12 21:56:57.417  INFO 7060 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : datawarehouse-db-test - Shutdown initiated...
+2020-02-12 21:56:57.428  INFO 7060 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : datawarehouse-db-test - Shutdown completed.
